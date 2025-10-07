@@ -1,0 +1,170 @@
+
+body{margin-left: 15%;
+     justify-content: space-around; 
+     margin-right: 15%; 
+      
+        }
+
+.top{display: flex;
+     }
+
+ 
+
+.T{ display: flex;
+   position: absolute;
+   right: 15%;
+   ;
+    
+     }
+     .T1:hover{background-color: rgb(227, 225, 225);}
+
+
+.logo{display: flex;
+      justify-content: space-evenly;
+      
+                }
+
+
+
+
+
+
+.images{
+    display: flex;
+    gap: 30px;
+    overflow: scroll;
+    
+    
+}
+
+.image1{border-radius: 10px;
+       box-shadow:  5px 10px 18px #888888  ;
+     
+       
+       
+        }
+       
+        .imge1:hover{animation-name: grow;
+            animation-duration: 1s;
+            
+       }
+
+        @keyframes grow{ 10% {transform: scale(1.2, 1.2);}}
+                
+.image2{border-radius: 10px;
+       box-shadow:  5px 10px 18px #888888  
+        }
+
+.image3{border-radius: 10px;
+       box-shadow:  5px 10px 18px #888888  
+        }
+        
+.image4{border-radius: 10px;
+       box-shadow:  5px 10px 18px #888888  
+        }
+ .image5{border-radius: 10px;
+       box-shadow:  5px 10px 18px #888888  
+        }
+        
+.para2{background-color: green;
+       border-radius: 5px;
+                             }
+  
+                          
+        
+.deal{ padding: 10px 75px; 
+      border-radius: 15px;
+       background-color: rgb(54, 54, 231);
+       font-size: larger;
+       
+                                 }
+     
+                                 
+
+
+   .search-bar form{
+    display: flex;
+    align-items: center;
+        margin: auto;
+        margin-top: 40px;
+    width: 1000px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.25);
+
+}
+
+.search-bar input{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+}
+
+#search-icon{
+    color: black;
+}
+
+#search, #date, #guest, #submit{
+    border: none;
+    background: none;
+    display: flex;
+    padding: 20px 20px;
+    border-left: 1px solid #ccc;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+#search{
+    width: 360px;
+    border: none;
+    outline: none;
+}
+
+#date{
+    display: flex;
+    width: 240px;
+}
+
+#guest{
+    display: flex;
+    width: 280px;
+}
+
+    
+
+
+#submit{
+    background-color: #0078e7;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 30px;
+    width: 110px;
+    border: none;
+    cursor: pointer;
+}
+
+#search:hover, #date:hover, #guest:hover{
+    background-color: #ededed;
+    border-radius: 12px;
+    
+}
+
+#submit:hover{
+    background-color: #005bb5;
+}
+
+#search:focus, #date:focus, #guest:focus{
+    border: #0177bb solid 2.5px;
+    border-radius: 12px;
+}
+#submit:focus{
+    border: #005bb5 solid 2.5px;
+    border-radius: 12px;
+}
+  
+.side{color: #3371b0; position: absolute; right: 15%; }
+.side{text-decoration: none; color: #38617a;}
+.headline{ display: flex;}
