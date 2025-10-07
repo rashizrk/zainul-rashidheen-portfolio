@@ -186,45 +186,20 @@ body{
     background: var(--bg-color);
     padding: 13px 0;
 }
-.home .proffession-box .proffession:nth-child(1) i{
-    margin-right: 15px;
-}
-.home .proffession-box .proffession:nth-child(2),
-.home .proffession-box .proffession:nth-child(4) {
-    padding-bottom: 20px;
-}
-.home .proffession i {
-    font-size: 3.8rem;
-}
-.home .proffession h3{
-    font-size: 3.2rem;
-    line-height: 1;
-    font-weight: 600;
-}
-.home .proffession-box .circle {
-    width: 560px; 
-    height: 560px;
-    border: 3px solid var(--main-color);
-    border-radius: 50%;
-}
-.home .proffession-container .overlay {
+
+
+
+
+   .home-img img {
     position: absolute;
     top: 0;
     right: 0;
-    width: 0;
-    height: 0;
-    border-top: 384px solid var(--main-color);
-    border-right: 384px solid var(--main-color);
-    border-bottom: 384px solid var(--main-color);
-    border-left: 384px solid transparent;
-}
-.home-img img{
-    position: relative;
-    bottom: 83px;
-    right: -800px;
     width: 50%;
     pointer-events: none;
+
 }
+
+
 
 span {
     color: var(--main-color);
@@ -473,6 +448,123 @@ textarea {
     }
 
 
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+
+/* For tablets and smaller laptops */
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem 5%;
+  }
+
+  section {
+    padding: 8rem 5% 2rem;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home .home-content {
+    max-width: 100%;
+  }
+
+  .home .profession-container {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .home-img img {
+    width: 60%;
+    position: static;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* For phones (portrait) */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .navbar a {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home .home-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .home .home-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .home-content p {
+    font-size: 1.4rem;
+  }
+
+  .home .profession-container {
+    display: none; /* Hide the circular profession animation for small screens */
+  }
+
+  .home-img img {
+    width: 80%;
+    margin-top: 3rem;
+  }
+
+  .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .home-content h3 {
+    font-size: 2.2rem;
+  }
+
+  .home-content p {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+  }
+
+  .social-media a {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.8rem;
+  }
+}
 
 
 
